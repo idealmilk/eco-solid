@@ -4,7 +4,7 @@ import { A } from "@solidjs/router";
 import { MetaTypes } from "~/types";
 
 type BlogGridTypes = {
-  posts: () => MetaTypes[];
+  posts: MetaTypes[];
 };
 
 const BlogGrid: Component<BlogGridTypes> = (props) => {
@@ -23,7 +23,7 @@ const BlogGrid: Component<BlogGridTypes> = (props) => {
   return (
     <section id="blog-grid">
       <ul class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
-        <For each={props.posts()}>
+        <For each={props.posts}>
           {(post) => {
             const formattedDate = formatDate(post.meta.publishedDate);
 

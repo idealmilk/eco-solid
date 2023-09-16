@@ -1,6 +1,6 @@
 export { default as ArticleHead } from "./ArticleHead";
-export { default as BlogGrid } from "./BlogGrid";
 export { default as CallToAction } from "./CallToAction";
+export { default as CardGrid } from "./CardGrid";
 export { default as Features } from "./Features";
 export { default as Footer } from "./Footer";
 export { default as Header } from "./Header";

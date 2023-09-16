@@ -1,0 +1,34 @@
+import { ArticleHead } from "../../components";
+
+export const meta = {
+  title: "Package Python",
+  publishedDate: "2023-02-14T15:30:45Z",
+  description: "Let's learn about Python variables",
+  slug: "/variables-in-python",
+};
+
+<ArticleHead
+  title={meta.title}
+  publishedDate={meta.publishedDate}
+  description={meta.description}
+/>
+
+# {meta.title}
+
+<div>
+  This is a blog post about <strong>variables</strong>. <br />
+  We'll learn about Python variables.
+</div>
+
+<br />
+
+### This is a Markdown sub-heading
+
+We just used a `###` subheading in our blog post.
+
+```
+  // this is a code block
+  const doSomething = () => {
+    return console.log('hey')
+  }
+```

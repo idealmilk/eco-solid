@@ -1,0 +1,34 @@
+import { ArticleHead } from "../../components";
+
+export const meta = {
+  title: "Package Astro",
+  publishedDate: "2022-09-14T15:30:45Z",
+  description: "Learn Astro by building a blog",
+  slug: "astro-build-tutorial",
+};
+
+<ArticleHead
+  title={meta.title}
+  publishedDate={meta.publishedDate}
+  description={meta.description}
+/>
+
+# {meta.title}
+
+<div>
+  This is a blog post about <strong>astro build</strong>. <br />
+  We'll learn how to build a blog with Astro and why it's better than the alternatives.
+</div>
+
+<br />
+
+### This is a Markdown sub-heading
+
+We just used a `###` subheading in our blog post.
+
+```
+  // this is a code block
+  const doSomething = () => {
+    return console.log('hey')
+  }
+```
